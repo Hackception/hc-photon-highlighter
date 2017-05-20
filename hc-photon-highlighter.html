@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="hc-photon-highlighter">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `hc-photon-highlighter`
+     * Photon.sh Syntax Highlighting
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class HcPhotonHighlighter extends Polymer.Element {
+      static get is() { return 'hc-photon-highlighter'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'hc-photon-highlighter'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(HcPhotonHighlighter.is, HcPhotonHighlighter);
+  </script>
+</dom-module>
